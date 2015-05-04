@@ -1,6 +1,8 @@
 'use strict';
 
-angular.module('<%= scriptAppName %>')
-  .service('<%= cameledName %>', function () {
-    // AngularJS will instantiate a singleton by calling "new" on this function
-  });
+module.exports = /*@ngInject*/
+  function <%= classedName %>Service(/* inject dependencies here, i.e. : $rootScope */) {
+    return {
+      // Do something awesome
+    };
+  };

@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('<%= scriptAppName %>')
-  .directive('<%= cameledName %>', function () {
+module.exports = /*@ngInject*/
+  function <%= cameledName %>Directive(/* inject dependencies here, i.e. : $rootScope */) {
     return {
       templateUrl: '<%= htmlUrl %>',
       restrict: 'EA',
       link: function (scope, element, attrs) {
       }
     };
-  });
+  };

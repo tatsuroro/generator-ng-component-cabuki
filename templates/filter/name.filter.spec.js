@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Filter: <%= cameledName %>', function () {
+describe('Filter: <%= cameledName %>Filter', function () {
 
   // load the filter's module
   beforeEach(module('<%= scriptAppName %>'));
@@ -8,7 +8,7 @@ describe('Filter: <%= cameledName %>', function () {
   // initialize a new instance of the filter before each test
   var <%= cameledName %>;
   beforeEach(inject(function ($filter) {
-    <%= cameledName %> = $filter('<%= cameledName %>');
+    <%= cameledName %> = $filter('<%= cameledName %>Filter');
   }));
 
   it('should return the input prefixed with "<%= cameledName %> filter:"', function () {

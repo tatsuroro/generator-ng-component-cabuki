@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%= scriptAppName %>')
-  .controller('<%= classedName %>Ctrl', function ($scope) {
+module.exports = /*@ngInject*/
+  function <%= classedName %>Ctrl($scope, $http) {
     $scope.message = 'Hello';
-  });
+  }

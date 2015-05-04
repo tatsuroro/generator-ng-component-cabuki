@@ -1,9 +1,13 @@
 'use strict';
 
-angular.module('<%= scriptAppName %>')
-  .config(function ($provide) {
+module.exports =
+  angular.module('<%= scriptAppName %>.<%= cameledName %>')
+  .config(Configuration);
+
+  /* @ngInject */
+  function Configuration($provide) {
     $provide.decorator('<%= cameledName %>', function ($delegate) {
       // decorate the $delegate
       return $delegate;
     });
-  });
+  }

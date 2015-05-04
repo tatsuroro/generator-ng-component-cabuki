@@ -1,16 +1,8 @@
 'use strict';
 
-angular.module('<%= scriptAppName %>')
-  .factory('<%= cameledName %>', function () {
-    // Service logic
-    // ...
-
-    var meaningOfLife = 42;
-
-    // Public API here
+module.exports = /*@ngInject*/
+  function <%= classedName %>Service(/* inject dependencies here, i.e. : $rootScope */) {
     return {
-      someMethod: function () {
-        return meaningOfLife;
-      }
+      // Do something awesome
     };
-  });
+  };

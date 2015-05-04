@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('<%= scriptAppName %>')
-  .filter('<%= cameledName %>', function () {
+module.exports = /*@ngInject*/
+  function <%= cameledName %>Filter(/* inject dependencies here, i.e. : $rootScope */) {
     return function (input) {
-      return '<%= cameledName %> filter: ' + input;
+      // Do something awesome
     };
-  });
+  };

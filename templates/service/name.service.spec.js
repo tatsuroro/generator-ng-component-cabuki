@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Service: <%= cameledName %>', function () {
+describe('Service: <%= classedName %>Service', function () {
 
   // load the service's module
   beforeEach(module('<%= scriptAppName %>'));

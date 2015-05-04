@@ -1,12 +1,10 @@
 'use strict';
 
-angular.module('<%= scriptAppName %>')
-  .directive('<%= cameledName %>', function () {
+module.exports = /*@ngInject*/
+  function <%= cameledName %>Directive(/* inject dependencies here, i.e. : $rootScope */) {
     return {
-      template: '<div></div>',
-      restrict: 'EA',
-      link: function (scope, element, attrs) {
-        element.text('this is the <%= cameledName %> directive');
+      link: function (scope, element) {
+        // Do something awesome
       }
     };
-  });
+  };
