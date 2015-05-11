@@ -12,7 +12,7 @@ module.exports =
   function Configuration($stateProvider) {
     $stateProvider
       .state('<%= cameledName %>', {
-        url: '/',
+        url: '^/<%= cameledName %>',
         templateUrl: 'app/<%= cameledName %>/<%= cameledName %>.html',
         controller: '<%= classedName %>Ctrl'
       });
