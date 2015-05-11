@@ -5,6 +5,7 @@ module.exports = /*@ngInject*/
     return {
       templateUrl: '<%= htmlUrl %>',
       restrict: 'EA',
+      replace: true,
       link: function (scope, element, attrs) {
       }
     };
