@@ -6,7 +6,11 @@ module.exports =
     // require('./main.controller').name
   ])
   .config(Configuration)
+  .constant('<%= cameledName %>Const', constant())
   .controller('<%= classedName %>Ctrl', require('./<%= cameledName %>.controller'));
+
+  // if you add service module
+  // .factory('<%= classedName %>Service', require('./<%= cameledName %>.service'));
 
   /* @ngInject */
   function Configuration($stateProvider) {
@@ -16,4 +20,10 @@ module.exports =
         templateUrl: 'app/<%= cameledName %>/<%= cameledName %>.html',
         controller: '<%= classedName %>Ctrl'
       });
+  }
+
+  function constant() {
+    return {
+      prop: 'constantVar'
+    };
   }
