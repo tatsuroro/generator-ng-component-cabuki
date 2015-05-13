@@ -2,4 +2,4 @@
 
 module.exports =
   angular.module('<%= scriptAppName %>.directives.<%= cameledName %>', [])
-  .directive('<%= cameledName %>Module', require('./<%= cameledName %>.directive'));
+  .directive('<%= cameledName %>', require('./<%= cameledName %>.directive'));

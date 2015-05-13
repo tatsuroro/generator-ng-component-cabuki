@@ -2,4 +2,4 @@
 
 module.exports =
   angular.module('<%= scriptAppName %>.filters.<%= cameledName %>', [])
-  .filter('<%= cameledName %>Filter', require('./<%= cameledName %>.filter'));
+  .filter('<%= cameledName %>', require('./<%= cameledName %>.filter'));
